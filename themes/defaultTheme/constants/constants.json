@@ -1,0 +1,47 @@
+{
+    "blue": {
+        "color": {
+            "value": "2f64a8ff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    },
+    "darkGrey": {
+        "color": {
+            "value": "212121ff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    },
+    "orange": {
+        "color": {
+            "value": "e4943aff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    },
+    "violet": {
+        "color": {
+            "value": "7f32adff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    },
+    "yellow": {
+        "color": {
+            "value": "efe75fff"
+        },
+        "colorType": {
+            "value": "one"
+        },
+        "type": "color"
+    }
+}

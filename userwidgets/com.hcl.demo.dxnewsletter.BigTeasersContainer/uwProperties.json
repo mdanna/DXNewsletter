@@ -1,0 +1,109 @@
+{
+    "classname": "BigTeasersContainer",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a830f5debed049199358200f1f4dc3ac",
+                    "paramList": [],
+                    "propertyKey": "addTeaser",
+                    "pw": {
+                        "displayName": "addTeaser",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "g4c79faf2c9b4baca3b02f1eefbd79d7",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bfe40d50b0ad4001a52442f448e81ce7",
+                    "paramList": [],
+                    "propertyKey": "removeAllTeasers",
+                    "pw": {
+                        "displayName": "removeAllTeasers",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "g4c79faf2c9b4baca3b02f1eefbd79d7",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g86f510a44364fbea6f0a53b233c869d",
+                    "paramList": [],
+                    "propertyKey": "layoutTeasers",
+                    "pw": {
+                        "displayName": "layoutTeasers",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "g4c79faf2c9b4baca3b02f1eefbd79d7",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "fd2e99898cc045e8b6171b14bc3242c6",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "title",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "title",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblTitle",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a44352dca2c54377a44581362e8145d1"
+                },
+                {
+                    "access": "Enable",
+                    "defaultSkinKUID": "s87a197684e94ab594cc6f691237033b",
+                    "group": "General",
+                    "kuid": "h7c0257e0c97453989ed24b69465c31c",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 2,
+                    "propertyKey": "skinTitle",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "skinTitle",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblTitle",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a44352dca2c54377a44581362e8145d1"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.demo.dxnewsletter",
+    "version": "1.0.0"
+}

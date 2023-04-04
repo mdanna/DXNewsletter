@@ -1,0 +1,74 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        10
+    ],
+    "_skin_": "s80d4524cc1841f2a4f894988ac167af",
+    "_text_": "RichText sdqklj adsklj lks lk sqlkj kljq lkj kldjq lkj lqdkj lkqwd jlkj sdqklj lksqd lk jsdqlkj lks dqlk klqds lkj klsdq jlk qsdlkj lkjqs dlkj lkjqsd lkj lkqsjd lkj lkjqs dklj lkqsd lkj lkqs dlk jlkj qdslkj lkj qslk jlkj qskld lkj qslkj kln sqlkn kl qslk nkl qskl jlk qsdklj lk qdslk kl jqdkl jlk qd",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 1,
+    "id": "rtContent",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f5feaaa5ee7e4c7e9d77fd52a4833b36",
+    "linkskin": "s4534d9d245a4a39ab7fa8777dbce6ed",
+    "minheight": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "name": "kony.ui.RichText",
+    "paddinginpixel": true,
+    "parent": "flxContent",
+    "pf": "frmArticle",
+    "responsiveData": {
+        "b1": {},
+        "b3": {
+            "centerY": {
+                "type": "string",
+                "value": ""
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

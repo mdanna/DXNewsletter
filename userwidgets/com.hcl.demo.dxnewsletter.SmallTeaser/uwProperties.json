@@ -1,0 +1,161 @@
+{
+    "classname": "SmallTeaser",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "j8f11a8a712643f5921cc1a92ea6de48",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 1,
+                    "propertyKey": "onClickTeaser",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onClickTeaser",
+                        "srcWidget": "flxGroup",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "i9ba1f0ce7264c2da660ae311d65a5fb",
+                    "translateAtInstance": false
+                }
+            ]
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "19",
+                    "group": "General",
+                    "kuid": "j2c93115513648efaf09f349718c7c12",
+                    "originalPropertyKey": "newsletterId",
+                    "propertyIndex": 5,
+                    "propertyKey": "newsletterId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "newsletterId",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "i6847af5c1394c859a99b87d893cad8c",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e82adf41f61c44c095f88354486987a0",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 1,
+                    "propertyKey": "newsletterImage",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "newsletterImage",
+                        "isHiddenInTool": false,
+                        "srcWidget": "imgNewsletter",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "g7d8e583e0f1408688bfce2276b81d4d"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "gff0d982c5a9498ca48e6ded1cdfc850",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "newsletterDate",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "newsletterDate",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblDate",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "d8574c5babbc4174bac1dcb03d0e78d1"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ia37d59485f146aa982d4e0c68e73c31",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "newsletterNumber",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "newsletterNumber",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblNumber",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "f7915eb704024a099e99c91ff3e066de"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f3b1518ce27649af80460203905e1270",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 4,
+                    "propertyKey": "newsletterText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "newsletterText",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblText",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "f4c5b602cbd447f18cd7b7cbaa5197e7"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hcl.demo.dxnewsletter",
+    "version": "1.0.0"
+}

@@ -1,0 +1,66 @@
+{
+    "models": {
+        "desktop": {
+            "1366": {
+                "class": "GraphLinksModel",
+                "linkDataArray": [],
+                "nodeDataArray": [
+                    {
+                        "formKUID": "ef7f09280d074b72856e30ba4dfd8c7f",
+                        "formName": "Form1",
+                        "isStartupForm": true,
+                        "key": "ef7f09280d074b72856e30ba4dfd8c7f",
+                        "loc": "8 24.845263671875003",
+                        "thumbnailURL": null
+                    }
+                ]
+            }
+        },
+        "mobile": {
+            "class": "GraphLinksModel",
+            "linkDataArray": [],
+            "nodeDataArray": [
+                {
+                    "formKUID": "aee5cf43d8f94548a244d2b750cd7be3",
+                    "formName": "frmBrowser",
+                    "isStartupForm": false,
+                    "key": "aee5cf43d8f94548a244d2b750cd7be3",
+                    "loc": "8 24.845263671875003",
+                    "thumbnailURL": null
+                },
+                {
+                    "formKUID": "b97afd9b87ad422f90e87d760ee519cb",
+                    "formName": "frmLogin",
+                    "isStartupForm": false,
+                    "key": "b97afd9b87ad422f90e87d760ee519cb",
+                    "loc": "8 624.845263671875",
+                    "thumbnailURL": null
+                },
+                {
+                    "formKUID": "e5c040b5d3284e7192b5cac4a7839a37",
+                    "formName": "frmMain",
+                    "isStartupForm": false,
+                    "key": "e5c040b5d3284e7192b5cac4a7839a37",
+                    "loc": "8 1224.845263671875",
+                    "thumbnailURL": null
+                },
+                {
+                    "formKUID": "ie5b4fe0540e494eae3b2bd047dbbc26",
+                    "formName": "frmNewsletter",
+                    "isStartupForm": false,
+                    "key": "ie5b4fe0540e494eae3b2bd047dbbc26",
+                    "loc": "8 1824.845263671875",
+                    "thumbnailURL": null
+                },
+                {
+                    "formKUID": "cba6e092dd374ebf908579ba6d7b3e1d",
+                    "formName": "frmSplash",
+                    "isStartupForm": true,
+                    "key": "cba6e092dd374ebf908579ba6d7b3e1d",
+                    "loc": "8 2424.845263671875",
+                    "thumbnailURL": null
+                }
+            ]
+        }
+    }
+}
