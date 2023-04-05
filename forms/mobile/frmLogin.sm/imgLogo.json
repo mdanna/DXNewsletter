@@ -4,7 +4,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "25%"
+        "value": "130dp"
     },
     "_left_": {
         "type": "string",
@@ -26,11 +26,11 @@
     "_src_": "showcaselogo.png",
     "_top_": {
         "type": "string",
-        "value": "5%"
+        "value": "30dp"
     },
     "_width_": {
         "type": "string",
-        "value": "25%"
+        "value": "130dp"
     },
     "canUpdateUI": true,
     "centerx": {
@@ -44,7 +44,7 @@
     "invokedProperty": "src",
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "c817407044e541e79bf8cbc37b431485",
+    "kuid": "g7f3b62e995f40ec8987e190f6e8dc40",
     "name": "kony.ui.Image2",
     "parent": "flxLogin",
     "pf": "frmLogin",

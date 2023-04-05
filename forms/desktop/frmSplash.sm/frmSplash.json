@@ -16,9 +16,9 @@
     ],
     "_percent_": true,
     "_pxMenuIndex": [
-        0,
+        2,
         1,
-        5
+        4
     ],
     "_skin_": "s2df9f0ce4554f73a43110521b3602f5",
     "_title_": null,
@@ -71,7 +71,10 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kiosk": {
-        "needAppMenu": false
+        "needAppMenu": false,
+        "psp": {
+            "enableScrolling": false
+        }
     },
     "kuid": "g511676029524d5889426b1c35343478",
     "layouttype": 2,

@@ -1,8 +1,8 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "string",
-        "value": "70%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_margin_": [
         0,
@@ -24,7 +24,7 @@
         "value": "90%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
+    "autogrowmode": 1,
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
@@ -46,8 +46,12 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "h3220fa7062f42db81b2ef11733f6bf2",
+    "kuid": "a1777987808243648f697c25dc56a72f",
     "layouttype": 4,
+    "maxwidth": {
+        "type": "string",
+        "value": "550dp"
+    },
     "name": "kony.ui.FlexContainer",
     "parent": "frmLogin",
     "pf": "frmLogin",

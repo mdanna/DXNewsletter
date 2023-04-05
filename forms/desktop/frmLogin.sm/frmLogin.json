@@ -75,7 +75,10 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kiosk": {
-        "needAppMenu": false
+        "needAppMenu": false,
+        "psp": {
+            "enableScrolling": false
+        }
     },
     "kuid": "b06ab31a420c44efacbf1be727a8ca2c",
     "layouttype": 2,

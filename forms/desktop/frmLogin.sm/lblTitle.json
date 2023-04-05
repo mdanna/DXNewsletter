@@ -3,7 +3,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "5%"
+        "value": "30dp"
     },
     "_margin_": [
         1,

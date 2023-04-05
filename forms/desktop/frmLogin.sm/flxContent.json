@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "65%"
+        "value": "400dp"
     },
     "_left_": {
         "type": "string",

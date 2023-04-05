@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "18%"
+        "value": "70dp"
     },
     "_left_": {
         "type": "string",
@@ -45,7 +45,7 @@
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "b6a5a210a71243f3979ca043280e2d5d",
+    "kuid": "fbe05a65d98f498f845acdd975e71562",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxContent",

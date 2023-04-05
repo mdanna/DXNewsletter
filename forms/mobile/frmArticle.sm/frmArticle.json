@@ -33,6 +33,7 @@
     "androidwearos": {
         "needAppMenu": false
     },
+    "bounceszoom": false,
     "canUpdateUI": true,
     "children": [
         "headerArticle",
@@ -66,6 +67,7 @@
     "iphone": {
         "needAppMenu": false,
         "psp": {
+            "bouncesZoom": false,
             "inputAccessoryViewType": 4,
             "titleBarAttributes": {
                 "barStyle": 0,
