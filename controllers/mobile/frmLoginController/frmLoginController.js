@@ -1,11 +1,5 @@
 define({ 
-
-	onViewCreated(){
-      this.view.init = () => {
-        this.view.flxLoginButton.onClick = () => {
-           new voltmx.mvc.Navigation('frmMain'). navigate();
-        };
-      };
-    }
-
+  onViewCreated(){
+    loginController.onViewCreated.call(this);
+  },
 });

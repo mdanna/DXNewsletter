@@ -59,8 +59,6 @@
     },
     "paddinginpixel": false,
     "platform": "desktopweb",
-    "prevDevice": "Pixel6",
-    "prevPlatform": "android",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,

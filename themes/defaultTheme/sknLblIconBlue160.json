@@ -15,12 +15,6 @@
   "border_style": "plain",
   "border_type": 0,
   "border_width": 0,
-  "constants": {
-    "font_color": {
-      "key": "color",
-      "value": "${themes.blue}"
-    }
-  },
   "desktopweb": {
     "font_name": "icomoon",
     "font_size": 160,
