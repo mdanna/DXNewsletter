@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="getArticles" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="getArticles" passwordencrypted="false" security="authorized_app" type="jsonConnector" smscode="" smsenabled="false">
     <service-config>
         <config-param api-version="" appid="" name="preprocessorname" value=""/>
         <config-param api-version="" appid="" name="postprocessorname" value=""/>
         <config-param api-version="" appid="" name="preprocessorJS" value=""/>
-        <config-param api-version="" appid="" name="postprocessorJS" value="&#10;var processOutput = function(){&#10;  var articles = result.findDataset(&quot;articles&quot;);&#10;  var sizeOfRecords = articles.getRecords().length;&#10;  for(var i = 0; i &lt; sizeOfRecords; i++) {&#10;    var datasetRecord = articles.getRecord(i); &#10;    var options = datasetRecord.getDatasetById('options');&#10;    var sizeOfOptions = options.getRecords().length;&#10;    for(var j = 0; j &lt; sizeOfOptions; j++){&#10;      var optionRecord = options.getRecord(j);&#10;      if(optionRecord.getParamValueByName('selected')){&#10;       var categoryTag = new com.konylabs.middleware.dataobject.Param();&#10;       categoryTag.setName('category');&#10;       categoryTag.setValue(optionRecord.getParamValueByName('value'));&#10;       datasetRecord.setParam(categoryTag);&#10;        break;&#10;      }&#10;   }&#10;    datasetRecord.removeDatasetById('options');&#10;  }&#10;};&#10;&#10;processOutput();&#10;"/>
+        <config-param api-version="" appid="" name="postprocessorJS" value="var processOutput = function(){&#10;  var articles = result.findDataset(&quot;articles&quot;);&#10;  if(articles){&#10;    var sizeOfRecords = articles.getRecords().length;&#10;    for(var i = 0; i &lt; sizeOfRecords; i++) {&#10;      var datasetRecord = articles.getRecord(i); &#10;      var options = datasetRecord.getDatasetById('options');&#10;      if(options){&#10;        var sizeOfOptions = options.getRecords().length;&#10;        for(var j = 0; j &lt; sizeOfOptions; j++){&#10;          var optionRecord = options.getRecord(j);&#10;          if(optionRecord.getParamValueByName('selected') === 'true'){&#10;           var categoryTag = new com.konylabs.middleware.dataobject.Param();&#10;           categoryTag.setName('category');&#10;           categoryTag.setValue(optionRecord.getParamValueByName('value'));&#10;           datasetRecord.setParam(categoryTag);&#10;            break;&#10;          }&#10;        }&#10;        datasetRecord.removeDatasetById('options');&#10;      }&#10;    }&#10;  }&#10;};&#10;&#10;processOutput();"/>
         <config-param api-version="" appid="" name="preprocessorRules" value=""/>
         <config-param api-version="" appid="" name="postprocessorRules" value=""/>
         <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
-        <config-param api-version="" appid="" name="endpointUrl" value="https://rob-dev.woodburn.digital/wps/mycontenthandler/wcmrest-v2/contents?parentID=$newsletterId"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://rob-328.woodburn.digital/wps/mycontenthandler/wcmrest-v2/contents?parentID=$newsletterId"/>
         <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
         <config-param api-version="" appid="" name="http.method" value="GET"/>
         <config-param api-version="" appid="" name="dataObjectName" value=""/>
@@ -16,6 +16,7 @@
         <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
         <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
         <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
         <config-param api-version="" appid="" name="jsonpath" value="true"/>
     </service-config>
     <service-input passthrough="false" isExtended="false">
@@ -44,7 +45,7 @@
             <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="content" order="" paramOrder="3" parentOrder="1" passnull="false" sms-name="" src="data.Body.data.value" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
                 <accessType></accessType>
             </param>
-            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="image" order="" paramOrder="4" parentOrder="1" passnull="false" sms-name="" src="data.['Primary Image'].data.image.resourceUri.value" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="image" order="" paramOrder="4" parentOrder="1" passnull="false" sms-name="" src="data.['Index Image'].data.image.resourceUri.value" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
                 <accessType></accessType>
             </param>
         </dataset>

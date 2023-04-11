@@ -5,12 +5,12 @@
   "intSvcs" : [ {
     "name" : "Newsletter",
     "version" : "1.0",
-    "etag" : "e0d76d65-45f6-4c56-a628-7383a4c02855"
+    "etag" : "2a0b4401-c6fb-4e33-b5bf-00df02c442ef"
   } ],
   "orchSvcs" : [ {
     "name" : "NewsletterOrchestration",
     "version" : "1.0",
-    "etag" : "cd5e6996-2aa7-4c20-946c-44c368d80ae3"
+    "etag" : "c65eb938-b71e-48c6-bdd1-47e0b852dc3f"
   } ],
   "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
 }

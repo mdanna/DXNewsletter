@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="" groupType="" id="getLibraryId" passwordencrypted="" security="authorized_app_user" type="CompositeConnector" smscode="" smsenabled="false">
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="" groupType="" id="getLibraryId" passwordencrypted="" security="authorized_app" type="CompositeConnector" smscode="" smsenabled="false">
     <service-config>
         <config-param api-version="" appid="" name="preprocessorname" value=""/>
         <config-param api-version="" appid="" name="postprocessorJS" value="function processOutput(){&#10;    var libraryId = request.getSession().getAttribute('libraryId');&#10;    var libraryTag = new com.konylabs.middleware.dataobject.Param();&#10;    libraryTag.setName('libraryId');&#10;    libraryTag.setValue(libraryId);&#10;    result.setParam(libraryTag);&#10;};&#10;&#10;processOutput();"/>
