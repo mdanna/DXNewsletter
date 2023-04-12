@@ -3,7 +3,7 @@ const newsletterController = {
     this.view.init = () => {
       this.view.headerNewsletter.onClickLeft = () => new voltmx.mvc.Navigation('frmMain').navigate();
       this.view.onBreakpointChange = () => {
-        this.navigationContext && (this.view.headerNewsletter.title = `Nr. ${this.navigationContext.issueNumber}`);
+        this.navigationContext && (this.view.headerNewsletter.title = `Nr. ${this.navigationContext.issueNumber || ''}`);
       };
     };
 
@@ -43,12 +43,12 @@ const newsletterController = {
                   id: `teaser${ind}${new Date().valueOf()}`,
                   right: ind === articleByCategory.articles.length - 1 ? `20dp` : '0'
                 }, {}, {});
-                teaser.image = article.image.startsWith('http') ? article.image : this.IMAGE_PREFIX + article.image;
+                teaser.image = article.image ? (article.image.startsWith('http') ? article.image : this.IMAGE_PREFIX + article.image) : '';
                 teaser.title = article.category;
                 teaser.text = article.title;
 
                 teaser.onClickTeaser = () => new voltmx.mvc.Navigation('frmArticle').navigate({
-                  headerTitle: `Nr. ${newsletter.issueNumber}`,
+                  headerTitle: `Nr. ${newsletter.issueNumber || ''}`,
                   title: article.title,
                   content: article.content
                 });

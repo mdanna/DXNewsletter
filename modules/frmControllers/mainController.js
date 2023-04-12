@@ -77,21 +77,24 @@ const mainController = {
         }, {}, {});
         
         let dateString = newsletter.date;
-        const dateStringArray = dateString.split(' ');
-        const timeString = dateStringArray[dateStringArray.length - 1];
-        dateString = dateString.replaceAll(` ${timeString}`, '');
-        const date = new Date(dateString);
-
-        const year = date.getFullYear();
-        let month = '' + (date.getMonth() + 1);
-        month = month.length === 1 ? `0${month}` : month;
-        let day = '' + date.getDate();
-        day = day.length === 1 ? `0${day}` : day;
+        if(dateString){
+          const dateStringArray = dateString.split(' ');
+          const timeString = dateStringArray[dateStringArray.length - 1];
+          dateString = dateString.replaceAll(` ${timeString}`, '');
+          const date = new Date(dateString);
+          const year = date.getFullYear();
+          let month = '' + (date.getMonth() + 1);
+          month = month.length === 1 ? `0${month}` : month;
+          let day = '' + date.getDate();
+          day = day.length === 1 ? `0${day}` : day;
+          teaser.newsletterDate = `${year}.${month}.${day}`;
+        } else {
+          teaser.newsletterDate = '';
+        }
         teaser.newsletterId = newsletter.id;
         teaser.newsletterImage = newsletter.thumbnail;
-        teaser.newsletterDate = `${year}.${month}.${day}`;
         teaser.newsletterText = newsletter.name;
-        teaser.newsletterNumber = `Nr. ${newsletter.issueNumber}`;
+        teaser.newsletterNumber = `Nr. ${newsletter.issueNumber || ''}`;
         teaser.onClickTeaser = () => new voltmx.mvc.Navigation('frmNewsletter').navigate(newsletter);
         flex.add(teaser);
         this.view.flxNewsletters.add(flex);
