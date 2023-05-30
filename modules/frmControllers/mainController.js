@@ -32,10 +32,12 @@ const mainController = {
     };
 
     this.view.preShow = () => {
-      this.reloadData().then((newsletters) => {
-        this.newsletters = [...newsletters];
-        this.loadData(this.newsletters);
-      });
+      if(this.navigationContext){
+        this.reloadData().then((newsletters) => {
+          this.newsletters = [...newsletters];
+          this.loadData(this.newsletters);
+        });
+      }
     };
   },
 
@@ -54,7 +56,41 @@ const mainController = {
   },
 
   loadData(newsletters){
+
+    const formatDate = (dateString) => {
+      if(dateString){
+        const dateStringArray = dateString.split(' ');
+        const timeString = dateStringArray[dateStringArray.length - 1];
+        dateString = dateString.replaceAll(` ${timeString}`, '');
+        const date = new Date(dateString);
+        const year = date.getFullYear();
+        let month = '' + (date.getMonth() + 1);
+        month = month.length === 1 ? `0${month}` : month;
+        let day = '' + date.getDate();
+        day = day.length === 1 ? `0${day}` : day;
+        return `${year}.${month}.${day}`;
+      } else {
+        return '';
+      }    
+    };
+    
+    newsletters.forEach((nl) => {
+      nl.dateString = formatDate(nl.date);
+    });
+    newsletters.sort((a, b) => {
+      let ret = 0;
+      if(a.dateString > b.dateString){
+        ret = 1;
+      } else if(a.dateString < b.dateString){
+        ret = -1;
+      } 
+      return ret;
+    });
+
     this.view.flxNewsletters.removeAll();
+
+
+
     newsletters.forEach((newsletter, index) => {
       if(newsletter.thumbnail){
         const flex = new voltmx.ui.FlexContainer({
@@ -75,22 +111,8 @@ const mainController = {
           centerX: '50%',
           centerY: '50%'
         }, {}, {});
-        
-        let dateString = newsletter.date;
-        if(dateString){
-          const dateStringArray = dateString.split(' ');
-          const timeString = dateStringArray[dateStringArray.length - 1];
-          dateString = dateString.replaceAll(` ${timeString}`, '');
-          const date = new Date(dateString);
-          const year = date.getFullYear();
-          let month = '' + (date.getMonth() + 1);
-          month = month.length === 1 ? `0${month}` : month;
-          let day = '' + date.getDate();
-          day = day.length === 1 ? `0${day}` : day;
-          teaser.newsletterDate = `${year}.${month}.${day}`;
-        } else {
-          teaser.newsletterDate = '';
-        }
+
+        teaser.newsletterDate = newsletter.dateString;
         teaser.newsletterId = newsletter.id;
         teaser.newsletterImage = newsletter.thumbnail;
         teaser.newsletterText = newsletter.name;
@@ -102,5 +124,5 @@ const mainController = {
     });
     this.view.flxNewsletters.forceLayout();
   }
-  
+
 };

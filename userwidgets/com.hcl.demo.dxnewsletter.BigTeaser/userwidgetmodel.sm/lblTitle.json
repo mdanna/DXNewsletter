@@ -29,7 +29,7 @@
     "_text_": "AUTOMOTIVE",
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "98%"
     },
     "_wrapping_": 2,
     "android": {
@@ -39,6 +39,10 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "lblTitle",
@@ -57,7 +61,7 @@
     "isvisible": true,
     "kuid": "i4a0592a7b0b41d4882f51b7b6f52901",
     "name": "kony.ui.Label",
-    "parent": "flxContent",
+    "parent": "flxContentBackground",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

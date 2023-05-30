@@ -29,7 +29,7 @@
     "_text_": "Sample teaser text spanning on several lines",
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "98%"
     },
     "_wrapping_": 2,
     "android": {
@@ -39,6 +39,10 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "lblText",
@@ -57,7 +61,7 @@
     "isvisible": true,
     "kuid": "d50923716a4846c9a2a09d5df1a19993",
     "name": "kony.ui.Label",
-    "parent": "flxContent",
+    "parent": "flxContentBackground",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
